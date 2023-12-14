@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(228, 235, 207);
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Fasthand", cursive;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+.app-box {
+  background-color: aliceblue;
+  width: 600px;
+  margin: 45px auto;
+  padding: 20px;
+  box-shadow: 0 30px 50px rgb(211, 214, 204);
+}
