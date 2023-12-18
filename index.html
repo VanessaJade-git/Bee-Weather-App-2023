@@ -10,17 +10,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fasthand&family=Orbitron:wght@400;700;800;900&family=Space+Grotesk:wght@400;500;600&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
   <body>
-    <div class="app-box">
+  
+    <div class="app-box" >
     <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter City Name..." required class="search-form-input" />
-        <input type="submit" value="Search" class="search-form-button" />
+      <form class="search-form" id="city-entered">
+        <input type="search" 
+        placeholder="Enter City Name..." 
+        required class="search-form-input" />
+        <input type="submit" 
+        value="Search" 
+        class="search-form-button" />
+      </id>
       </form>
+    
     </header>
     <main>
       <div class="weather-data">
         <div>
-      <h1 class="weather-city-heading">Perth</h1>
+      <h1 class="weather-city-heading" id="city">Perth</h1></id>
       <p class="weather-city-details">Tuesday 10:45, Partly Cloudy
       </br>
 Precipitation:<strong>0%</strong>
@@ -41,7 +48,7 @@ Wind:<strong> 26 km/h</strong>
       </div>
 </div>
     </div> 
-    
+      <div class="bee-image">🐝</div>
       <br></br>
     </main>
     <footer>
@@ -54,4 +61,5 @@ Wind:<strong> 26 km/h</strong>
     </footer>
     </div>
   </body>
+  <script src="src/index.js"></script>
 </html>

@@ -93,3 +93,8 @@ main {
 .weather-city-icon {
   font-size: 50px;
 }
+.bee-image {
+  display: flex;
+  margin-left: 25%;
+  font-size: 50px;
+}
