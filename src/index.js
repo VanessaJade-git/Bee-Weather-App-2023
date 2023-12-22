@@ -22,10 +22,41 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#weatherdescription");
   let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
   temperatureElement.innerHTML = Math.round(temperature);
+
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+  windElement.innerHTML = `${response.data.wind.speed}km/hr`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+
+  timeElement.innerHTML = formdate(date);
+
   console.log(response.data.condition.description);
+  console.log(response.data);
+  console.log(response.data.Temperature.humidity);
 }
 searchCity("Paris");
+console.log(response.data.Temperature.current.humidity);
+
+function formdate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+
+  return `${day} ${hour} :${minute}`;
+}
