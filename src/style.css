@@ -98,3 +98,28 @@ main {
   margin-left: 25%;
   font-size: 50px;
 }
+.weather-forcast {
+  margin-top: 20px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.weather-forcast-temp {
+  margin-left: 60px;
+  font-size: 16px;
+  color: darkgray;
+}
+.weather-forcast-date {
+  font-size: 16px;
+  color: darkgray;
+}
+.forcast-temp-max {
+  margin-left: 60px;
+  font-size: 13px;
+  color: darkgray;
+}
+.forcast-temp-min {
+  margin-left: 60px;
+  font-size: 13px;
+  color: darkgray;
+}
